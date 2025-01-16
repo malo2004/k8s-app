@@ -1,1 +1,1 @@
-# mgmt-jenkins
+# Simple webapp
