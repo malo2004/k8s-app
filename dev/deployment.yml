@@ -18,3 +18,10 @@ spec:
           image: nginx:latest
           ports:
             - containerPort: 80
+          volumeMounts:
+            - name: webapp-html
+              mountPath: /usr/share/nginx/html
+          volumes:
+           - name: webapp-html
+             persistentVolumeClaim:
+               claimName: webappdev-pvc 
