@@ -9,5 +9,4 @@ spec:
  resources:
    requests:
      storage: 1G
-   storageClassName: nfs-storage
-
+   storageClassName: webapp1
