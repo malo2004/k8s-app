@@ -24,4 +24,4 @@ spec:
       volumes:
        - name: webapp-html
          persistentVolumeClaim:
-         claimName: webappdev-pvc 
+           claimName: webappdev-pvc 

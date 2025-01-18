@@ -9,4 +9,4 @@ spec:
  resources:
    requests:
      storage: 1G
-   storageClassName: webapp1
+ storageClassName: webapp1
