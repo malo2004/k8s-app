@@ -15,13 +15,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:latest
+          image: nginx:registry.gitlab.com/malo2004/k8s-app:1.0.0
           ports:
             - containerPort: 80
-          volumeMounts:
-            - name: webapp-html
-              mountPath: /usr/share/nginx/html
-      volumes:
-       - name: webapp-html
-         persistentVolumeClaim:
-           claimName: webappdev-pvc 
