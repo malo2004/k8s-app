@@ -4,19 +4,19 @@ metadata:
   name: frontend-server
   namespace: dev  
   labels:
-   app: frontend-nginx
+   app: frontend-server
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: frontend-nginx
+      app: frontend-server
 template:
   metadata:
     labels:
       app: frontend-server
 spec:
   containers:
-    - name: frontend-nginx
+    - name: frontend-server
       image: nginx:registry.gitlab.com/malo2004/k8s-app:1.0.0
       ports:
         - containerPort: 80
