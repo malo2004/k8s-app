@@ -17,6 +17,6 @@ spec:
    spec:
     containers:
       - name: frontend-server
-        image: nginx:registry.gitlab.com/malo2004/k8s-app:1.0.0
+        image: registry.gitlab.com/malo2004/k8s-app:1.0.0
         ports:
          - containerPort: 80
