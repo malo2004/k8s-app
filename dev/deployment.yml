@@ -1,20 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
-  namespace: dev
+  name: frontend-server
+  namespace: dev  
+  labels:
+   app: frontend-nginx
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
-      app: nginx
-  template:
-    metadata:
-      labels:
-        app: nginx
-    spec:
-      containers:
-        - name: nginx
-          image: nginx:registry.gitlab.com/malo2004/k8s-app:1.0.0
-          ports:
-            - containerPort: 80
+      app: frontend-nginx
+template:
+  metadata:
+    labels:
+      app: frontend-nginx
+spec:
+  containers:
+    - name: frontend-nginx
+      image: nginx:registry.gitlab.com/malo2004/k8s-app:1.0.0
+      ports:
+        - containerPort: 80
