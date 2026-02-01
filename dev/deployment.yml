@@ -17,6 +17,6 @@ spec:
    spec:
     containers:
       - name: frontend-server
-        image: registry.gitlab.com/malo2004/k8s-app:1.0.0
+        image: ghcr.io/malo2004/k8s-app:1.0.0
         ports:
          - containerPort: 80
