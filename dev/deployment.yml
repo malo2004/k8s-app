@@ -19,6 +19,6 @@ spec:
        - name: dockerregist
      containers:
        - name: frontend-server
-         image: ghcr.io/malo2004/k8s-app:latest
+         image: ghcr.io/malo2004/k8s-app:1.0.0
          ports:
           - containerPort: 80
