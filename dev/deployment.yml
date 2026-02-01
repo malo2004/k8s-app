@@ -10,13 +10,13 @@ spec:
   selector:
     matchLabels:
       app: frontend-server
-template:
-  metadata:
+  template:
+   metadata:
     labels:
       app: frontend-server
-spec:
-  containers:
-    - name: frontend-server
-      image: nginx:registry.gitlab.com/malo2004/k8s-app:1.0.0
-      ports:
-        - containerPort: 80
+   spec:
+    containers:
+      - name: frontend-server
+        image: nginx:registry.gitlab.com/malo2004/k8s-app:1.0.0
+        ports:
+         - containerPort: 80
