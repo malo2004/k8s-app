@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+<pre>apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend-server
@@ -14,11 +14,11 @@ spec:
    metadata:
     labels:
       app: frontend-server
-    spec:
+   spec:
      imagePullSecrets:
        - name: regcred
      containers:
-       - name: frontend-server
-         image: ghcr.io/malo2004/k8s-app:1.0.0
-         ports:
-          - containerPort: 80
+        - name: frontend-server
+          image: ghcr.io/malo2004/k8s-app:1.0.0
+          ports:
+           - containerPort: 80
