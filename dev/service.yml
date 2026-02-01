@@ -4,7 +4,7 @@ metadata:
   name: nginx-service
   namespace: dev
   labels:
-   run: nginx
+   run: frontend-nginx
 spec:
   ports:
    - protocol: TCP
@@ -13,4 +13,4 @@ spec:
      nodePort: 30102
   type: NodePort
   selector:
-    app: nginx 
+    app: frontend-nginx
