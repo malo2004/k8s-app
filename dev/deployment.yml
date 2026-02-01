@@ -13,7 +13,7 @@ spec:
 template:
   metadata:
     labels:
-      app: frontend-nginx
+      app: frontend-server
 spec:
   containers:
     - name: frontend-nginx
